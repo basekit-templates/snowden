@@ -1,7 +1,7 @@
 {
-    "name": "everest",
+    "name": "snowden",
     "thumbnail": "thumbnail.png",
-    "screenshot":"himalaya-screenshot.jpg",
+    "screenshot":"snowden-screenshot.jpg",
     "widgetVersion":2,
     "pageTypes": ["home"],
     "templateType":"standard",
@@ -166,6 +166,7 @@
         "site": {
             "color__body--background": "@color-swatch1",
             "color__link--text": "@color-swatch2",
+            "color__body--border": "@color-swatch7",
             "color__companyname--text": "@font-swatch10-color",
             "font__companyname--font-family": "@font-swatch10-font-family",
             "font__companyname--font-size": "@font-swatch10-font-size",
@@ -209,7 +210,7 @@
         },
         "button": {
             "color__button--background": "@color-swatch3",
-            "color__button--background--hover": "lighten(@color-swatch3, 10%)",
+            "color__button--background--hover": "@color-swatch2",
             "color__button--text": "@font-swatch7-color",
             "font__button--font-family": "@font-swatch7-font-family",
             "font__button--font-size": "@font-swatch7-font-size",
@@ -219,7 +220,7 @@
         },
         "navigation": {
             "color__navigation--text": "@font-swatch6-color",
-            "color__navigation--text--hover": "@font-swatch6-color",
+            "color__navigation--text--hover": "lighten(@font-swatch6-color,20%)",
             "font__navigation--font-family": "@font-swatch6-font-family",
             "font__navigation--font-size": "@font-swatch6-font-size",
             "font__navigation--font-weight": "@font-swatch6-font-weight",
@@ -229,7 +230,6 @@
         "feature": {
             "color__feature-headline--text": "@font-swatch8-color",
             "color__feature-strapline--text": "@font-swatch9-color",
-            "color__feature-content--background": "fade(@color__primary, 30%)",
             "color__feature-button--text": "@font-swatch7-color",
             "color__feature-button--background": "@color__button--background",
             "color__feature-button--background--hover": "lighten(@color__button--background, 20%)",
@@ -244,10 +244,24 @@
             "font__feature-strapline--line-height": "@font-swatch9-line-height",
             "font__feature-strapline--letter-spacing": "@font-swatch9-letter-spacing"
         },
+        "socialicons": {
+            "color__socialicons--icon": "@color-swatch7",
+            "color__socialicons--icon--hover": "@color-swatch2"
+        },
         "gallery": {
-            "color__gallery-caption--background": "fade(@color-swatch2,30%)",
+            "color__gallery-caption--background": "@color-swatch7",
             "color__gallery-title--text": "@color-swatch1",
             "color__gallery-description--text": "@color-swatch1"
+        },
+        "slideshow": {
+            "color__slideshow-caption--background": "@color-swatch7",
+            "color__slideshow-title--text": "@color-swatch1",
+            "color__slideshow-pagination-item--text": "@color-swatch1",
+            "color__slideshow-pagination-item--background": "@color-swatch7",
+            "color__slideshow-pagination-item--background--hover": "@color-swatch2"
+        },
+        "blog": {
+            "color__blogpostlist-title--text": "@color-swatch4"
         },
         "ecommerce": {
             "color__ecomproduct-title--text": "@color-swatch4",
