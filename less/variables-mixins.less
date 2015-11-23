@@ -1,0 +1,175 @@
+// --------------------------------
+// HIMALAYA: Variables-Mixins
+// --------------------------------
+
+
+/*  ===============================
+    Colour Swatches
+    ===============================
+    "color1": == Background
+    "color2": == Contrast colour
+    "color3": == Button colour
+    "color4": == Title colour
+    "color5": == Paragraph colour
+    "color6": == Nav text colour
+    "color7": == Page border colour
+    =============================== */
+
+/*  ===============================
+    Font Swatches
+    ===============================
+    "font1":  == Heading 1
+    "font2":  == Heading 2
+    "font3":  == Heading 3
+    "font4":  == Heading 4
+    "font5":  == Paragraph
+    "font6":  == Navigation Text
+    "font7":  == Buttons
+    "font8":  == Feature Title
+    "font9":  == Feature Subtitle
+    "font10": == Logo
+    =============================== */
+
+
+
+// -----------------------------
+// Media Queries
+// -----------------------------
+
+@tablet-860px: ~"only screen and (max-width: 860px)";
+@mobile-650px: ~"only screen and (max-width: 650px)";
+
+
+
+
+// -----------------------------
+// Flexbox Mixins
+// -----------------------------
+
+.flex-vert-center {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.flex(@display: flex) {
+    display: ~"-webkit-@{display}";
+    display: ~"-moz-@{display}";
+    display: ~"-ms-@{display}box"; // IE10 uses -ms-flexbox
+    display: ~"-ms-@{display}"; // IE11
+    display: @display;
+}
+
+// Flex Flow Direction
+// - applies to: flex containers
+// row | row-reverse | column | column-reverse
+.flex-direction(@direction: row) {
+  -webkit-flex-direction: @direction;
+     -moz-flex-direction: @direction;
+      -ms-flex-direction: @direction;
+          flex-direction: @direction;
+}
+
+// Axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | space-between | space-around
+.justify-content(@justify: center) {
+  -webkit-justify-content: @justify;
+     -moz-justify-content: @justify;
+      -ms-justify-content: @justify;
+          justify-content: @justify;
+}
+
+// Packing Flex Lines
+// - applies to: multi-line flex containers
+// flex-start | flex-end | center | space-between | space-around | stretch
+.align-content(@align: center) {
+  -webkit-align-content: @align;
+     -moz-align-content: @align;
+      -ms-align-content: @align;
+          align-content: @align;
+}
+
+// Cross-axis Alignment
+// - applies to: flex containers
+// flex-start | flex-end | center | baseline | stretch
+.align-items(@align: center) {
+  -webkit-align-items: @align;
+     -moz-align-items: @align;
+      -ms-align-items: @align;
+          align-items: @align;
+}
+
+.flex-wrap(@wrap: nowrap) {
+  -webkit-flex-wrap: @wrap;
+     -moz-flex-wrap: @wrap;
+      -ms-flex-wrap: @wrap;
+          flex-wrap: @wrap;
+}
+
+.flex(@columns: initial) {
+  -webkit-flex: @columns;
+     -moz-flex: @columns;
+      -ms-flex: @columns;
+          flex: @columns;
+}
+
+.flex-grow(@grow: 0) {
+  -webkit-flex-grow: @grow;
+     -moz-flex-grow: @grow;
+      -ms-flex-grow: @grow;
+          flex-grow: @grow;
+}
+
+
+
+// -----------------------------
+// Animations
+// -----------------------------
+
+
+// Transitions
+// -------------------
+
+.transition(@duration:0.2s, @ease:ease-in-out) {
+  -webkit-transition: all @duration @ease;
+  -moz-transition: all @duration @ease;
+  -o-transition: all @duration @ease;
+  transition: all @duration @ease;
+}
+
+// Pull Down
+// -------------------
+
+.pullDown {
+    animation-name: pullDown;
+    -webkit-animation-name: pullDown;
+
+    animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+
+    animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
+
+    transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+}
+
+@keyframes pullDown {
+    0% {transform: scaleY(0.1);}
+    40% {transform: scaleY(1.02);}
+    100% {transform: scaleY(0.98);}
+}
+
+@-webkit-keyframes pullDown {
+    0% {-webkit-transform: scaleY(0.1);}
+    40% {-webkit-transform: scaleY(1.02);}
+    100% {-webkit-transform: scaleY(0.98);}
+}
+

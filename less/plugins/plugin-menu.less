@@ -1,0 +1,82 @@
+// --------------------------------
+// HIMALAYA: Plugin-Menu
+// --------------------------------
+
+// Menu sections widget
+// --------------------
+
+// Turns menu sections into buttons
+.menusections  .menusections-item {
+    margin: 10px 0;
+    padding: 8px 26px;
+    background-color: @color-swatch3;
+    .transition(@duration:0.2s, @ease:ease-in-out); // Mixin
+
+    &:hover {
+        background-color: @color-swatch3-alt;
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.menu-item-name {
+    font-family: @font-swatch7-font-family;
+    color: @font-swatch7-color;
+    font-size: @font__button--font-size;
+    line-height: @font__button--line-height;
+
+    font-style: italic;
+    -webkit-font-smoothing: antialiased;
+
+     &:hover {
+        text-decoration: none;
+     }
+}
+
+
+// Menu Section Title
+// --------------------
+.section-header .menu__section-title {
+    margin: 20px 0;
+    display: inline-block;
+    border: 4px solid @color-swatch3;
+    padding: 10px;
+}
+
+
+.menu-subsection .section-header .menu__section-title {
+    text-decoration: none;
+    margin: 0;
+    margin-bottom: 10px;
+    border: none;
+    display: block;
+    padding: 0;
+}
+
+
+// Menu Title
+// --------------------
+.menu__item-title {
+    font-style: italic;
+}
+
+.dietary-item {
+    &:before {
+        content: "/";
+        color: #a5a5a5;
+        font-weight: 700;
+    }
+}
+
+
+// Featured Menu
+// --------------------
+
+.menu-item--featured,
+.menu-section--featured {
+    background-color: transparent;
+    border: 4px solid @color__body--border;
+}

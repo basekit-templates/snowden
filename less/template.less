@@ -1,0 +1,233 @@
+// -------------------------
+// EVEREST: Template Styles
+// -------------------------
+
+
+// -----------------------------
+// Body
+// -----------------------------
+
+// DT-1872 ie11 bug and Flexbox footer
+body {
+  background-attachment: fixed;
+  background-color: @color__body--background;
+}
+
+
+// Border
+// -----------------------------
+
+.template-header {
+  border-top: 10px solid @color__body--border;
+  border-left: 10px solid @color__body--border;
+  border-right: 10px solid @color__body--border;
+}
+
+.template-content {
+  border-left: 10px solid @color__body--border;
+  border-right: 10px solid @color__body--border;
+  margin-bottom: -20px;
+  padding-bottom: 46px;
+}
+
+.template-footer {
+  border-bottom: 10px solid @color__body--border;
+  border-left: 10px solid @color__body--border;
+  border-right: 10px solid @color__body--border;
+}
+
+
+
+// Content
+.template-content {
+    padding-top: 80px;
+
+    @media @mobile-650px {
+        padding-top: 40px;
+    }
+}
+
+
+
+// Container
+// -----------------------------
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 980px) {
+      margin: 0 10px;
+    }
+}
+
+
+// Flexbox Sticky Footer
+// -----------------------------
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.template-content{
+  flex: 1 0 auto;
+}
+
+.template-header,
+.template-footer {
+  flex-shrink: 0; /* 2 */
+}
+
+
+// Cookie Warning
+// -----------------------------
+
+.bk-cookie-container {
+  position: absolute;
+  top: 0;
+  background-color: fade(@color__body--border,80%);
+  width: 100%;
+  padding: 20px;
+
+  p {
+    color: #fff;
+    display: inline-block;
+    margin-right: 20px;
+  }
+}
+
+
+
+
+
+
+// -----------------------------
+// Footer
+// -----------------------------
+
+
+// Footer Container
+// -----------------------------
+
+.container-footer {
+  border-top: 1px solid darken(@color__body--background,12%);
+  width: 90%;
+  margin: 0 5%;
+  padding: 30px 0;
+  @media only screen and (min-width: 1140px) {
+      width: 960px; // 1140px - 10% for margins
+      margin: 0 auto;
+  }
+
+
+
+    // Footer Content
+    // -----------------------------
+
+    .footer-content {
+      .flex;
+      .flex-direction(@direction: column);
+      .justify-content(@justify: space-between);
+      .align-items;
+    }
+
+    & > .widget--template-widget,
+    .brand-icons__template-footer {
+        -webkit-flex: 0 1 35px;
+        -ms-flex: 0 1 35px;
+        flex: 0 1 35px;
+    }
+
+
+    .content > p {
+      font-size: @font__button--font-size;
+      color: lighten(@color__p--text,15%);
+    }
+}
+
+
+
+
+// Brand Icons
+// -----------------------------
+
+.brand-icons__template-footer {
+  .flex;
+  margin-top: 25px;
+
+  & > .widget--template-widget {
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+  }
+
+}
+
+
+// .container-footer {
+//     width: 90%;
+//     margin: 0 5%;
+//     padding: 30px 0;
+//     @media only screen and (min-width: 1140px) {
+//         width: 960px; // 1140px - 10% for margins
+//         margin: 0 auto;
+//     }
+
+//     // Flex box for desktop
+//     border-top: 1px solid darken(@color__body--background,12%);
+//     display: -webkit-flex;
+//     display: flex;
+//    -webkit-flex-direction: row;
+//            flex-direction: row;
+//        -webkit-flex-align: center;
+//            -ms-flex-align: center;
+//       -webkit-align-items: center;
+//               align-items: center;
+//   -webkit-justify-content: space-between;
+//           justify-content: space-between;
+//     @media @tablet-860px {
+//         display: block;
+//         text-align: center;
+//         margin-bottom: 0 auto;
+//     }
+
+//     .footer-profile, .footer-content {
+//       display: inline-block;
+//       .flex-grow(1);
+//       width: 50%;
+
+//       @media @tablet-860px {
+//         display: block;
+//         width: 100%;
+//       }
+//     }
+
+//     .footer-profile ul {
+//       text-align: left;
+//     }
+
+//     .footer-content {
+//       // For IE10 seems to ignore flexbox
+//       margin-left: -5px;
+//       text-align: right;
+
+//       @media @tablet-860px {
+//         margin-left: 0;
+//       }
+//     }
+
+//     .footer-content, .footer-profile ul {
+//       @media @tablet-860px {
+//           text-align: center;
+//       }
+//     }
+// }

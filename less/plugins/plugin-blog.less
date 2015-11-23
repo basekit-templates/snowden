@@ -1,0 +1,89 @@
+// --------------------------------
+// HIMALAYA: Plugin-Blog
+// --------------------------------
+
+// Blog Post List
+// -----------------------------
+
+.blogpostlist {
+    width: 70%;
+    margin: 0 auto;
+
+    @media @tablet-860px { width: 90%; }
+
+    @media @mobile-650px { width: 100%; }
+}
+
+.blogpostlist__post-header {
+    margin-bottom: 20px;
+}
+
+// Title colour
+.blogpostlist__title-link {
+    color: @color__blogpostlist-title--text;
+    font-family: @font__h2--font-family;
+    font-size: @font__h1--font-size;
+}
+
+// Read more
+.blogpostlist__read-more {
+    font-size: @font__button--font-size;
+    font-weight: @font__button--font-weight;
+    color: @color__p--text;
+    text-transform: uppercase;
+}
+
+// Timestamp
+.post-footer .timestamp {
+    font-size: 12px;
+    font-weight: @font__button--font-weight;
+    color: lighten(@color__p--text,30%);
+    text-transform: uppercase;
+}
+
+// footer
+.blogpostlist__post-list-footer {
+    margin-top: 40px;
+}
+
+// Pagination
+// -----------------------------
+
+.blogpostlist__pagination-list {
+    .flex;
+    .justify-content(@justify: space-between);
+
+    .button--pagination {
+        color: @color__h1--text;
+        background-color: transparent;
+        text-shadow: none;
+    }
+
+}
+// Blog Post
+// -----------------------------
+
+// Post Article
+.post-article {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+// Post Image
+.blogpostlist__image {
+    margin: 0 auto;
+}
+
+.blogpostlist__post-content {
+    margin: 40px 0 20px;
+}
+
+.blogpost__post-body {
+    text-align: left;
+}
+
+// Blogpost Title
+.blogpost__post-title {
+	margin: 25px 0;
+	padding-bottom: 0;
+}

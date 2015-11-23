@@ -1,0 +1,260 @@
+{
+    "name": "everest",
+    "thumbnail": "thumbnail.png",
+    "screenshot":"himalaya-screenshot.jpg",
+    "widgetVersion":2,
+    "pageTypes": ["home"],
+    "templateType":"standard",
+    "tags": {
+    "en": ["minimal", "clean", "multipurpose", "simple", "design", "portfolio", "art", "images", "agency", "creative", "modern", "photography"],
+    "es": ["minimalista", "limpio", "multiuso", "simple", "diseño", "portafolio", "arte", "imágenes", "agencia", "moderno", "fotográfico"],
+    "br": ["minimalista", "limpo", "multiuso", "simples", "diseño", "portafolio", "arte", "imágenes", "agencia" , "moderno", "fotografia"]
+    },
+    "images": [
+        "images/feature.jpg",
+        "images/logo.png",
+        "images/gallery/1.jpg",
+        "images/gallery/2.jpg",
+        "images/gallery/3.jpg",
+        "images/gallery/4.jpg",
+        "images/gallery/5.jpg",
+        "images/gallery/6.jpg",
+        "images/gallery/7.jpg",
+        "images/gallery/8.jpg"
+    ],
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#88B4E8",
+            "color3":"#000000",
+            "color4":"#000000",
+            "color5":"#000000",
+            "color6":"#000000",
+            "color7":"#000000"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#ee4d83",
+            "color3":"#000000",
+            "color4":"#000000",
+            "color5":"#000000",
+            "color6":"#000000",
+            "color7":"#000000"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#5776b8",
+            "color3":"#000000",
+            "color4":"#000000",
+            "color5":"#000000",
+            "color6":"#000000",
+            "color7":"#000000"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#87d0e0",
+            "color3":"#000000",
+            "color4":"#000000",
+            "color5":"#000000",
+            "color6":"#000000",
+            "color7":"#000000"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#449a88",
+            "color3":"#000000",
+            "color4":"#000000",
+            "color5":"#000000",
+            "color6":"#000000",
+            "color7":"#000000"
+        }
+    },
+    "fontSwatch": {
+       "title": "Helvetica Neue, Helvetica, Arial, sans-serif",
+        "font1": {
+            "font-family": "\"Old Standard TT\", Times New Roman, serif",
+            "font-size": "33px",
+            "font-weight": "400",
+            "line-height": "33px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"Old Standard TT\", Times New Roman, serif",
+            "font-size": "24px",
+            "font-weight": "700",
+            "line-height": "33px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"Old Standard TT\", Times New Roman, serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "inherit",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"Old Standard TT\", Times New Roman, serif",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "inherit",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "30px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "12px",
+            "font-weight": "700",
+            "line-height": "30px",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch6",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch1",
+            "background-color-hover": "@color-swatch1"
+         },
+        "font7": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "13px",
+            "font-weight": "900",
+            "line-height": "inherit",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "@color-swatch2"
+        },
+        "font8": {
+            "font-family": "\"Old Standard TT\", Times New Roman, serif",
+            "font-size": "43px",
+            "font-weight": "400",
+            "line-height": "60px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "inherit",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"Old Standard TT\", Times New Roman, serif",
+            "font-size": "36px",
+            "font-weight": "400",
+            "line-height": "42px",
+            "color": "@color-swatch4",
+            "letter-spacing": "1px"
+        }
+    },
+    "styles": {
+        "colors": {
+            "color__primary": "@color-swatch2",
+            "color__secondary": "@color-swatch1"
+        },
+        "site": {
+            "color__body--background": "@color-swatch1",
+            "color__link--text": "@color-swatch2",
+            "color__companyname--text": "@font-swatch10-color",
+            "font__companyname--font-family": "@font-swatch10-font-family",
+            "font__companyname--font-size": "@font-swatch10-font-size",
+            "font__companyname--font-weight": "@font-swatch10-font-weight",
+            "font__companyname--line-height": "@font-swatch10-line-height",
+            "font__companyname--letter-spacing": "@font-swatch10-letter-spacing"
+        },
+        "typography": {
+            "color__h1--text": "@font-swatch1-color",
+            "color__h2--text": "@font-swatch2-color",
+            "color__h3--text": "@font-swatch3-color",
+            "color__h4--text": "@font-swatch4-color",
+            "color__p--text": "@font-swatch5-color",
+            "font__heading" : "@font-swatch1-font-family",
+            "font__body" : "@font-swatch5-font-family",
+            "font__h1--font-family" : "@font-swatch1-font-family",
+            "font__h1--font-size" : "@font-swatch1-font-size",
+            "font__h1--font-weight" : "@font-swatch1-font-weight",
+            "font__h1--line-height" : "@font-swatch1-line-height",
+            "font__h1--letter-spacing" : "@font-swatch1-letter-spacing",
+            "font__h2--font-family" : "@font-swatch2-font-family",
+            "font__h2--font-size" : "@font-swatch2-font-size",
+            "font__h2--font-weight" : "@font-swatch2-font-weight",
+            "font__h2--line-height" : "@font-swatch2-line-height",
+            "font__h2--letter-spacing" : "@font-swatch2-letter-spacing",
+            "font__h3--font-family" : "@font-swatch3-font-family",
+            "font__h3--font-size" : "@font-swatch3-font-size",
+            "font__h3--font-weight" : "@font-swatch3-font-weight",
+            "font__h3--line-height" : "@font-swatch3-line-height",
+            "font__h3--letter-spacing" : "@font-swatch3-letter-spacing",
+            "font__h4--font-family" : "@font-swatch4-font-family",
+            "font__h4--font-size" : "@font-swatch4-font-size",
+            "font__h4--font-weight" : "@font-swatch4-font-weight",
+            "font__h4--line-height" : "@font-swatch4-line-height",
+            "font__h4--letter-spacing" : "@font-swatch4-letter-spacing",
+            "font__p--font-family" : "@font-swatch5-font-family",
+            "font__p--font-size" : "@font-swatch5-font-size",
+            "font__p--font-weight" : "@font-swatch5-font-weight",
+            "font__p--line-height" : "@font-swatch5-line-height",
+            "font__p--letter-spacing" : "@font-swatch5-letter-spacing"
+        },
+        "button": {
+            "color__button--background": "@color-swatch3",
+            "color__button--background--hover": "lighten(@color-swatch3, 10%)",
+            "color__button--text": "@font-swatch7-color",
+            "font__button--font-family": "@font-swatch7-font-family",
+            "font__button--font-size": "@font-swatch7-font-size",
+            "font__button--font-weight": "@font-swatch7-font-weight",
+            "font__button--line-height": "@font-swatch7-line-height",
+            "font__button--letter-spacing": "@font-swatch7-letter-spacing"
+        },
+        "navigation": {
+            "color__navigation--text": "@font-swatch6-color",
+            "color__navigation--text--hover": "@font-swatch6-color",
+            "font__navigation--font-family": "@font-swatch6-font-family",
+            "font__navigation--font-size": "@font-swatch6-font-size",
+            "font__navigation--font-weight": "@font-swatch6-font-weight",
+            "font__navigation--line-height": "@font-swatch6-line-height",
+            "font__navigation--letter-spacing": "@font-swatch6-letter-spacing"
+        },
+        "feature": {
+            "color__feature-headline--text": "@font-swatch8-color",
+            "color__feature-strapline--text": "@font-swatch9-color",
+            "color__feature-content--background": "fade(@color__primary, 30%)",
+            "color__feature-button--text": "@font-swatch7-color",
+            "color__feature-button--background": "@color__button--background",
+            "color__feature-button--background--hover": "lighten(@color__button--background, 20%)",
+            "font__feature-headline--font-family": "@font-swatch8-font-family",
+            "font__feature-headline--font-size": "@font-swatch8-font-size",
+            "font__feature-headline--font-weight": "@font-swatch8-font-weight",
+            "font__feature-headline--line-height": "@font-swatch8-line-height",
+            "font__feature-headline--letter-spacing": "@font-swatch8-letter-spacing",
+            "font__feature-strapline--font-family": "@font-swatch9-font-family",
+            "font__feature-strapline--font-size": "@font-swatch9-font-size",
+            "font__feature-strapline--font-weight": "@font-swatch9-font-weight",
+            "font__feature-strapline--line-height": "@font-swatch9-line-height",
+            "font__feature-strapline--letter-spacing": "@font-swatch9-letter-spacing"
+        },
+        "gallery": {
+            "color__gallery-caption--background": "fade(@color-swatch2,30%)",
+            "color__gallery-title--text": "@color-swatch1",
+            "color__gallery-description--text": "@color-swatch1"
+        },
+        "ecommerce": {
+            "color__ecomproduct-title--text": "@color-swatch4",
+            "color__ecomproduct-price--text": "@color-swatch5"
+        },
+        "form": {
+            "color__form-label--text": "@color-swatch4"
+        }
+    }
+}

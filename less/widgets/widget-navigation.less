@@ -1,0 +1,199 @@
+// -----------------------------
+// HIMALAYA: Navigation
+// -----------------------------
+
+// Navigation Bar
+// --------------
+
+.extendednavigation {
+    margin-bottom: 45px;
+
+    .pullDown;
+}
+
+
+// Navigation List
+// ---------------
+
+.navigation-list {
+    min-width: 140px;
+    margin: 0;
+}
+
+// This fixes the issue of folder item wrapping or not wrapping
+.navigation-list--children {
+    width: auto;
+    white-space: normal;
+}
+
+
+// Navigation Item
+// ---------------
+
+.navigation-item {
+    .transition;
+    @media @tablet-860px {
+        width: 100%;
+    }
+}
+
+
+// Navigation Link
+.navigation-item .item-name {
+    padding: 14px 23px;
+    text-transform: uppercase;
+    .transition;
+
+    &:hover {
+        color: @color__navigation--text--hover;
+    }
+}
+
+
+// Selected Navigation Link
+.navigation-item.selected > .item-name {
+
+    &:after {
+        content: "";
+        display: block;
+        border-bottom: 2px solid @color__navigation--text;
+    }
+
+    @media @tablet-860px {
+        text-decoration: underline;
+
+        &:after {
+            border-bottom: 0;
+        }
+    }
+}
+
+
+// Dropdown Menu
+// -------------
+
+.navigation-item.folder {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.item-name--parent {
+    &:after {
+        font-family: 'FontAwesome', sans-serif;
+        content: "\f107";
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 0.8em;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+        @media @tablet-860px {
+            content: "\f054";
+            font-size: 0.8em;
+        }
+        .navigation-item.open & {
+            @media @tablet-860px {
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+
+.navigation-list--children,
+.default-page .navigation-list--children {
+       -moz-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.16);
+    @media @tablet-860px {
+        border-top: none;
+        background-color: @color-swatch1;
+        position: relative;
+        top: 0;
+        background-color: lighten(@color-swatch2, 35%);
+        .navigation-item:hover & {
+            display: none;
+        }
+        .navigation-item.open & {
+            display: block;
+        }
+    }
+}
+
+
+// Collapsible navigation
+// -------------
+
+@media @tablet-860px {
+    .navigation-toggle {
+        display: block;
+    }
+    .navigation-body {
+        display: none;
+        .open & {
+            display: block;
+        }
+    }
+}
+
+// Toggle Button
+// -------------
+
+// Navigation Toggle Button
+.navigation-toggle {
+    display: none;
+    @media @tablet-860px {
+        display: block;
+        width: 40px;
+        height: 32px;
+        cursor: pointer;
+        padding: 0 5px;
+        border: none;
+        background: @color__body--border;
+        text-indent: 9999px;
+        overflow: hidden;
+        line-height: 0;
+        outline: 0;
+        margin: 0 auto;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        &:hover {
+            background-color: @color-swatch2;
+        }
+    }
+}
+
+
+// Bars
+// ----------
+
+// Toggle Button Closed State
+.bar {
+    width: 30px;
+    height: 2px;
+    background: @color-swatch1;
+    margin: 5px 0;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+}
+// Toggle Button Open State
+.open & {
+    &.one {
+        -webkit-transform:  rotate(45deg) translate(4px, 4px);
+        -moz-transform:  rotate(45deg) translate(4px, 4px);
+        -o-transform:  rotate(45deg) translate(4px, 4px);
+        -ms-transform:  rotate(45deg) translate(4px, 4px);
+        transform:  rotate(45deg) translate(4px, 4px);
+    }
+    &.two {
+        opacity: 0;
+    }
+    &.three {
+        -webkit-transform:  rotate(-45deg) translate(6.5px,-7.5px);
+        -moz-transform:  rotate(-45deg) translate(6.5px,-7.5px);
+        -o-transform:  rotate(-45deg) translate(6.5px,-7.5px);
+        -ms-transform:  rotate(-45deg) translate(6.5px,-7.5px);
+        transform:  rotate(-45deg) translate(5.8px,-5px);
+    }
+}
