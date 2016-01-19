@@ -40,7 +40,7 @@
 // -----------------------------
 
 .logo {
-    margin: 60px auto 10px;
+    margin: 40px auto 10px;
     text-align: center;
 
     img {
@@ -99,7 +99,7 @@
     min-height: 400px;
     background-size: cover;
     .flex-vert-center;  // Mixin
-    .justify-content; // Mixin
+    .justify-content(center); // Mixin
 
     &:after {
         content: "";
@@ -461,14 +461,12 @@ button.pause-toggle {
 // ------------------------------
 
     .responsiveslideshow__pagination-list {
-        .flex;
-        .justify-content;
         margin-top: 10px;
+        text-align: center;
 
     }
 
     .responsiveslideshow__button.button--pagination {
-        .flex-vert-center;
         padding: 0;
         width: 10px;
         height: 10px;
