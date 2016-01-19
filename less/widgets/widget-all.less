@@ -660,6 +660,10 @@ input {
         -webkit-align-content: flex-end;
         -ms-flex-line-pack: flex-end;
         align-content: flex-end;
+
+        @media @moble-650px {
+            display: block;
+        }
     }
 
 
@@ -674,6 +678,12 @@ input {
         display: flex;
         @media @mobile-650px {
             margin-bottom: 10px;
+            width: 100%;
+
+            .button {
+                width: 100%;
+                text-align: center;
+            }
         }
 
         &:first-child {
@@ -684,8 +694,10 @@ input {
             flex: 1 1 auto;
             margin-right: 10px;
 
+            @media @mobile-650px {
+                margin-right: 0;
+            }
         }
-
     }
 
     // Last Form Group
@@ -840,6 +852,11 @@ blockquote:after {
     .tweet-wrap {
         width: 85%;
         padding: 0 20px;
+
+        @media @mobile-650px{
+            padding: 0 10px;
+            width: 100%;
+        }
     }
 
     // Both
@@ -851,6 +868,10 @@ blockquote:after {
         @media @tablet-860px {
             margin-bottom: 10px;
             text-align: center;
+        }
+
+        @media @mobile-650px {
+            display: block;
         }
     }
 
