@@ -125,7 +125,10 @@
     .product-item-title,
     .ecomproductslist__title-link {
         color: @color__ecomproduct-title--text;
+        font-family: @font__h2--font-family;
         font-size: @font__h2--font-size;
+        letter-spacing: @font__h2--letter-spacing;
+        line-hight: @font__h2--line-height;
 
         &:hover {
             text-decoration: none;
@@ -258,10 +261,10 @@
     }
 
     .js-ecom-product-add-to-cart-btn {
-        background-color: @color-swatch2;
+        background-color: @color__button--background;
 
         &:hover {
-            background-color: #72C1B0;
+            background-color: @color__button--background--hover;
         }
     }
 

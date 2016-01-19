@@ -20,13 +20,6 @@ body {
 // Headings
 // -------------------------
 
-h1,
-h2,
-.image-title,
-.account-link {
-    font-weight: @font-swatch4-font-weight;
-}
-
 
 h5, h6 {
     margin: 0;
@@ -46,7 +39,8 @@ p {
 
 
 h1 {
-    color: @font-swatch4-color;
+    color: @color__h1--text;
+    font-weight: @font__h1--font-weight;
     margin-bottom: 12px;
 
     @media @tablet-860px {
@@ -63,6 +57,7 @@ h1 {
 
 h2 {
     color: @color__h2--text;
+    font-weight: @font__h2--font-weight;
 
     @media @tablet-860px {
         font-size: bkscale(@font-swatch2-font-size, 0.925);

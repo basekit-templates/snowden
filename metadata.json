@@ -74,17 +74,17 @@
        "title": "Helvetica Neue, Helvetica, Arial, sans-serif",
         "font1": {
             "font-family": "\"Old Standard TT\", Times New Roman, serif",
-            "font-size": "33px",
+            "font-size": "34px",
             "font-weight": "400",
-            "line-height": "33px",
+            "line-height": "42px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font2": {
             "font-family": "\"Old Standard TT\", Times New Roman, serif",
-            "font-size": "24px",
-            "font-weight": "700",
-            "line-height": "33px",
+            "font-size": "26px",
+            "font-weight": "400",
+            "line-height": "34px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -249,8 +249,7 @@
         },
         "gallery": {
             "color__gallery-caption--background": "@color-swatch7",
-            "color__gallery-title--text": "@color-swatch1",
-            "color__gallery-description--text": "@color-swatch1"
+            "color__gallery-title--text": "@color-swatch1"
         },
         "slideshow": {
             "color__slideshow-caption--background": "@color-swatch7",
@@ -260,10 +259,10 @@
             "color__slideshow-pagination-item--background--hover": "@color-swatch2"
         },
         "blog": {
-            "color__blogpostlist-title--text": "@color-swatch4"
+            "color__blogpostlist-title--text": "@color__h2--text"
         },
         "ecommerce": {
-            "color__ecomproduct-title--text": "@color-swatch4",
+            "color__ecomproduct-title--text": "@color__h2--text",
             "color__ecomproduct-price--text": "@color-swatch5"
         },
         "form": {
