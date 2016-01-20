@@ -165,7 +165,6 @@
         },
         "site": {
             "color__body--background": "@color-swatch1",
-            "color__body--border": "@color-swatch7",
             "color__link--text": "@color-swatch2",
             "color__companyname--text": "@font-swatch10-color",
             "font__companyname--font-family": "@font-swatch10-font-family",
