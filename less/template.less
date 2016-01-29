@@ -66,19 +66,20 @@ body {
 // Flexbox Sticky Footer
 // -----------------------------
 
-html {
-  height: 100%;
-}
 
 body {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
+
+    @media @tablet-860px {
+      display: block;
+      height: auto;
+    }
 }
 
 .template-content{
-  //flex: 1 0 auto;
-  height: 100%;
+  flex: 1 0 auto;
 }
 
 .template-header,
