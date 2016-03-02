@@ -213,6 +213,10 @@
     .justify-content(@justify: space-between);
     .flex-wrap(@wrap: wrap);
 
+    @media @mobile-650px {
+        display: block;
+    }
+
     .product-images,
     .product-content {
         -webkit-flex: 0 1 48%;
@@ -239,6 +243,17 @@
 
     .product-price {
         font-family: @font__p--font-family;
+    }
+
+    .product-actions,
+    .product-attributes {
+        text-align: center;
+    }
+
+    .product-gallery {
+        @media @mobile-650px {
+            text-align: center;
+        }
     }
 
 
