@@ -255,15 +255,15 @@
             text-align: center;
         }
     }
-    
+
     .product-gallery .gallery-item {
         background-color: #f5f5f5;
         line-height: 100%;
         height: auto;
-        
+
         .image {
             max-height: 80px;
-            
+
             @media @mobile {
                 max-height: 60px;
             }
@@ -456,4 +456,42 @@ table {
 // --------------
 .product-availability {
     display: inline-block;
+}
+
+
+
+// --------------------------------
+// Ecom Product List For Columns
+// --------------------------------
+
+.columns-three-left,
+.columns-three-middle,
+.columns-three-right,
+.columns-four-first,
+.columns-four-second,
+.columns-four-third,
+.columns-four-fourth {
+
+    .product-filters {
+
+        .ecomproductslist__form-body {
+            display: block;
+        }
+
+        .fieldset--search .ecomproductslist__button {
+            margin-top: 0;
+        }
+
+        .fieldset--filters .form-group {
+            width: 100%;
+        }
+    }
+
+    .product-list {
+        display: block;
+
+        .product-item {
+            width: 100%;
+        }
+    }
 }
