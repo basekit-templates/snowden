@@ -1,6 +1,12 @@
 <!-- Header -->
 <header class="template-header clearfix">
 
+            {% if plugins.ecommerce.store.live %}
+        <div class="header-basket">
+            {{widget('ecombasket', 'shopbasket', {})|raw}}
+        </div>
+        {% endif %}
+
     {{widget('extendednavigation', 'nav', {"align":"center"})|raw}}
 
     {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
