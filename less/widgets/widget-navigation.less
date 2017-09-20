@@ -16,6 +16,15 @@
         margin-bottom: 0;
         padding-left: 0;
         padding-right: 0;
+
+        + .widget-overlay {
+            display: none;
+        }
+
+        &.open + .widget-overlay {
+            display: block;
+            top: 60px;
+        }
     }
 }
 
