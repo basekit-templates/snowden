@@ -27,12 +27,15 @@
 
         <!-- Nav Menu Script -->
         <script nonce="{{ numberUsedOnce }}">
-            $( ".navigation-toggle" ).append( "<div class='bar one'></div><div class='bar two'></div><div class='bar three'></div>" );
+            $(document).ready(function() {
+                $(".navigation-toggle").append( "<div class='bar one'></div><div class='bar two'></div><div class='bar three'></div>" );
+            });
 
             // Toggles class open to display/hide the whole navigation
-            $( ".navigation-toggle" ).click(function() {
+            $(document).on("click", ".navigation-toggle", function() {
                 $( ".extendednavigation" ).toggleClass( "open" );
             });
+
 
             // Toggles class open to display/hide folders
             $( ".navigation-item.folder" ).each(function() {
