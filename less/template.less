@@ -7,6 +7,11 @@
 // Body
 // -----------------------------
 
+
+body:not(.edit) .language-selector--dropdown {
+    overflow: inherit;
+}
+
 // DT-1872 ie11 bug and Flexbox footer
 body {
   background-attachment: fixed;
@@ -86,26 +91,6 @@ body {
 .template-footer {
   flex-shrink: 0; /* 2 */
 }
-
-
-// Cookie Warning
-// -----------------------------
-
-.bk-cookie-container {
-  position: absolute;
-  top: 0;
-  background-color: fade(@color-swatch4, 80%);
-  width: 100%;
-  padding: 20px;
-
-  p {
-    color: #fff;
-    display: inline-block;
-    margin-right: 20px;
-  }
-}
-
-
 
 
 
