@@ -8,8 +8,12 @@
 // -----------------------------
 
 
+// PIRATE-4908
 body:not(.edit) .language-selector--dropdown {
-    overflow: inherit;
+    overflow: inherit!important;
+}
+.language-selector--dropdown .language-selector__list {
+    z-index: 1;
 }
 
 // DT-1872 ie11 bug and Flexbox footer
