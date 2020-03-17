@@ -1,5 +1,5 @@
 {
-    "name": "Snowden",
+    "versionTenCompatible": 1,
     "thumbnail": "thumbnail.png",
     "screenshot":"snowden-screenshot.jpg",
     "widgetVersion":2,
