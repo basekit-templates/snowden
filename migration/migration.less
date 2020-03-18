@@ -3,6 +3,12 @@
 // -----------------------------
 
 
+body#migrated-site {
+    display: block;
+    height: inherit;
+}
+
+
 #migrated-site {
 
 
@@ -14,6 +20,15 @@
         width: 100%;
         max-width: 100%;
         padding: 0;
+        
+        @media only screen and (max-width: 980px) {
+            margin: 0;
+        }
+    }
+    
+    .row-overlay {
+        left: -110px;
+        right: -110px;
     }
 
 
@@ -27,21 +42,31 @@
     .empty-zone,
     #page-zones__main:empty,
     #page-zones__main > .widget:not([data-name="row"]),
-    .row:not(.row--width-no-padding) .row__container {
-        max-width: 1200px;
+    .row:not(.row--width-no-padding) .row__container,
+    [data-widget-type="feature"] {
+        max-width: 960px;
         margin-left: auto;
         margin-right: auto;
-        padding-left: 5%;
-        padding-right: 5%;
+        
+        @media only screen and (max-width: 980px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
     
     
     // Adds spacing to a section when a widget follows it
     #page-zones__main > [data-name="row"] + .widget:not([data-name="row"]),
     #page-zones__main > .widget:not([data-name="row"]) + [data-name="row"]:not(:last-child),
-    &.edit #page-zones__main-overlay + .widget:not([data-name="row"]),
-    #page-zones__main > .widget:not([data-name="row"]):first-child {
-        margin-top: 20px;
+    &.edit #page-zones__main-overlay + .widget:not([data-name="row"]) {
+        margin-top: 60px;
+        
+        @media @tablet {
+            margin-top: 40px;
+        }
+        @media @tablet {
+            margin-bottom: 20px;
+        }
     }
 
     
@@ -55,15 +80,21 @@
     }
     
     
+    // Remove spacing from first light section
+    #page-zones__main > .style--light:first-child .row--style-light .row__container {
+        padding-top: 0;
+    }
+    
+    // Remove spacing from first light section
+    #page-zones__main > [data-name="row"].style--light + .widget:not([data-name="row"]) {
+        margin-top: 0;
+    }
+    
+    
     // Widget styles
     [data-name="row"] {
-        .widget--zone-widget {
-            margin-bottom: 0;
-        }
-        .ecomproduct__form-body,
-        .ecomproduct__legend {
-            padding-left: 0;
-            padding-right: 0;
+        .gallery .image-link {
+            padding-top: inherit;    
         }
     }
 
